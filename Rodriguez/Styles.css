@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 14px;
+    text-align: right;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.holiday-section {
+    margin-bottom: 50px;
+}
+
+.holiday-grid {
+     margin-top: 20px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.holiday-card {
+    background: linear-gradient(145deg, #ffeaa7, #fdcb6e);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 8px solid #f39c12;
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.holiday-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+
+
+.holiday-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.holiday-card img {
+    border: 3px solid #fff;
+    margin: 10px auto;
+    background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
+    width: calc(100% - 20px);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.holiday-card h3 {
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.holiday-card p {
+    font-size: 16px;
+    color: #34495e;
+    padding: 0 10px 15px 10px;
+    font-weight: 600;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-timezones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.footer-timezones div {
+    margin: 5px 0;
+    font-size: 14px;
+}
